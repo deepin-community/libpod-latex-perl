@@ -1,0 +1,49 @@
+libpod-latex-perl (0.61-3) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: use HTTPS for GitHub URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+  * Add libpod-parser-perl to {build,runtime} dependencies.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-
+    Browse.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 17 May 2020 14:11:12 +0200
+
+libpod-latex-perl (0.61-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update Module::Build dependency.
+  * Add debian/upstream/metadata
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Remove version from libmodule-build-perl.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 30 May 2015 16:43:43 +0200
+
+libpod-latex-perl (0.61-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #707984)
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 20 May 2013 21:00:10 +0200

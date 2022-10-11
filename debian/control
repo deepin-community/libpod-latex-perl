@@ -1,0 +1,26 @@
+Source: libpod-latex-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libmodule-build-perl,
+               libpod-parser-perl <!nocheck>
+Build-Depends-Indep: perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libpod-latex-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libpod-latex-perl.git
+Homepage: https://metacpan.org/release/Pod-LaTeX
+Rules-Requires-Root: no
+
+Package: libpod-latex-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libpod-parser-perl
+Description: module to convert Pod data to formatted LaTeX
+ Pod::LaTeX is a module to convert documentation in the Pod format into LaTeX.
+ The pod2latex command uses this module for translation.
+ .
+ Pod::LaTeX is a derived class from Pod::Select.
